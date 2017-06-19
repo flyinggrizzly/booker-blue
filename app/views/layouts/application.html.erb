@@ -12,8 +12,30 @@
   </head>
 
   <body>
-
-    <%= yield %>
-
+    <header class="row">
+    </header>
+    <div class="row flash">
+    </div>
+    <main class="row">
+      <div class="wrap">
+      <% unless flash.empty? %>
+        <section id="application-alerts" class="row">
+          <div class="column small-6 small-offset-3">
+            <% flash.each do |message_type, message| %>
+              <%= content_tag(:div, message, class: "callout #{message_type}") %>
+            <% end %>
+          </div>
+        </section>
+      <% end %>
+      <%= yield %>
+    </main>
+    <div class="footer-container ">
+      <footer class="row">
+        <div class="column small-12 footer-content">
+          <p class="cprt">Released under the <a href="https://choosealicense.com/licenses/agpl-3.0/">AGPL v3</a> by <a href="http://flyinggrizzly.io">Flying Grizzly</a>, 2017<%= " - #{Time.zone.now.strftime("%Y")}" if Time.zone.now.strftime("%Y").to_i > 2017 %>.</p>
+          <p class="source-link"><a href="https://github.com/flyinggrizzly/booker-blue">View or fork the source</a></p>
+        </div>
+      </footer>
+    </div><!-- end .footer-container -->
   </body>
 </html>

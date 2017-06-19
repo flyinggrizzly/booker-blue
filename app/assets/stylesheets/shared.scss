@@ -1,0 +1,24 @@
+/* Variables */
+$header-footer-bg-color: lightgrey;
+
+/* Basic site styles */
+
+.full-width {
+  margin: 0 !important;
+  width: 100%;
+  max-width: 100% !important;
+}
+.footer-container {
+  background: $header-footer-bg-color;
+}
+footer {
+  .footer-content {
+    border-left: 4px solid midnightblue;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    .cprt, .source-link {
+      font-size: .9rem;
+      margin: 0;
+    }
+  }
+}
