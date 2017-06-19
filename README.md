@@ -1,24 +1,35 @@
-# README
+# Booker Blue
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is intended to be federatable personal library webapp. The idea is that on an instance, users maintain personal libraries, and can connect with other users to expose their libraries to each other. They can then request to borrow books. Different instances can also be federated, so that users can increase their reach.
 
-Things you may want to cover:
+The app tracks the following information:
 
-* Ruby version
+- title
+- medium (movie, book, comic, cd)
+- genre (namespaced to medium)
+- tags
+- creator (authors, directors)
+- secondary creators (artist, stars)
+- format (hardback, dvd)
+- summary (pull from an API?)
+- review (personal review)
+- location - defined per user (home, beach house, shelf, on loan, etc)
+- available for borrowing?
+- visible to others?
 
-* System dependencies
+## Things I know it's going to need
 
-* Configuration
+- user management
+  - instance admin
+  - signups
+  - confirmations
+  - password resets
+  - profile editing
+- media model
+  - inherited by specific mediums
+- API for federation
+  - steal ideas from [Mastodon](http://mastodon.social) or [GNU Social](https://gnu.io/social)
 
-* Database creation
+## License
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Licensed under the [AGPL v3](https://choosealicense.com/licenses/agpl-3.0/#). Sharing is caring!
