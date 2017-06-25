@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Devise for authentication
-gem 'devise'
+gem 'devise', '~> 4.3'
 
 # Use Figaro for environment config
 gem 'figaro', '~> 1.1'

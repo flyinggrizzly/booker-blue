@@ -90,5 +90,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Set Devise action mailer for dev
-  config.action_mailer.default_url_options = { host: 'booker.blue' }
+  config.action_mailer.default_url_options = { host: Figaro.env.devise_action_mailer_host }
 end

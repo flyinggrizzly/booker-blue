@@ -200,7 +200,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
-  devise
+  devise (~> 4.3)
   figaro (~> 1.1)
   foundation-rails (~> 6.3)
   jbuilder (~> 2.5)
