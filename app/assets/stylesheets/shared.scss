@@ -1,19 +1,27 @@
-/* Variables */
-$header-footer-bg-color: lightgrey;
+/* Variables */ 
+$header-footer-bg-color: #1B5070;
 
 /* Basic site styles */
 
-.full-width {
-  margin: 0 !important;
-  width: 100%;
-  max-width: 100% !important;
-}
-.footer-container {
+.header-container, .footer-container {
   background: $header-footer-bg-color;
+}
+header h1 {
+  color: #fbf1e0;
+}
+footer *, header * {
+  color: white;
+}
+header a, footer a {
+  color: #fbf1e0;
+  text-decoration: underline;
+  &:hover {
+    color: #f7e4c2;
+  }
 }
 footer {
   .footer-content {
-    border-left: 4px solid midnightblue;
+    border-left: 4px solid #66b2b2;
     margin-top: 8px;
     margin-bottom: 8px;
     .cprt, .source-link {
