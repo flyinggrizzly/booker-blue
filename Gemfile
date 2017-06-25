@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Devise for authentication
 gem 'devise'
 
+# Use Figaro for environment config
+gem 'figaro', '~> 1.1'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
